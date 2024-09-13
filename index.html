@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="container">
+            <h1 class="appname">Password Generator</h1>
+
+<!-- .............................................................................................................. -->
+            <div class="displaycontainer">
+                <input type="text" readonly placeholder="password" class="display" passowrddisplay>
+                <button class="copybutton">
+                    <span datacopymsg class="copycooltip"></span>
+                    <img src="copy.svg" alt="" width="23" height="23" id="copyicon">
+
+                </button>
+            </div>
+<!-- ************************************************************************************************************** -->
+            <div class="inputcontainer">
+
+                <div class="lengthcontainer">
+                    <p>Password Length</p>
+                     <p datalengthnumber>0</p>
+                </div>
+
+                <input type="range" min="1" max="20" class="slider" datalengthslider>
+
+                <div class="checkboxcontainer"  >
+                    <input type="checkbox" id="uppercase" >
+                    <label for="uppercase">Include Uppercase letters</label>    
+                </div>
+
+
+                <div class="checkboxcontainer">
+                    <input type="checkbox" id="lowercase" >
+                    <label for="lowercase">Include lowercase letters</label>    
+                </div>
+
+                <div class="checkboxcontainer">
+                    <input type="checkbox" id="numbers" >
+                    <label for="numbers">Include numbers </label>    
+                </div>
+
+                <div class="checkboxcontainer">
+                    <input type="checkbox" id="characters" >
+                    <label for="characters">Include characters </label>    
+                </div>
+
+
+<!-- ************************************************************************************************************** -->
+
+<!-- <div class="strength">
+    <p>strength</p>
+    <div dataindicator class="indicator"></div> 
+</div>
+ -->
+
+    <button class="generatebutton">Generate password</button>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
